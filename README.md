@@ -76,8 +76,8 @@ Attribute directives are further catogorized into three kinds
 
 #### Input directive
 
-*Input directive receives information
-*it is wrapped within []
+* Input directive receives information
+* it is wrapped within []
 
 ```
  example:
@@ -93,9 +93,9 @@ Attribute directives are further catogorized into three kinds
 
 #### Output Directive
 
-*Output directive is usally an event listener
-*it invokes the function which is specified as the value
-*it is enclosed with in  ()
+* Output directive is usally an event listener
+* it invokes the function which is specified as the value
+* it is enclosed with in  ()
 
 ```
   example:
