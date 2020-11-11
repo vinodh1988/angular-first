@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent implements OnInit {
-
+theme = 'circle-container';
   constructor() { }
 
   ngOnInit(): void {

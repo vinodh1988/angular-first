@@ -63,9 +63,45 @@ Every component itself is a directive
 
 ###  Attribute Directives
 
+Any attribute directive changes behaviour of the target element
+
+target element could be either any html element or angular component
+
 Attribute directives are further catogorized into three kinds
 
 1. Input Directive
 2. Output Directive
 3. Input Output Directive
     
+
+#### Input directive
+
+*Input directive receives information
+*it is wrapped within []
+
+```
+ example:
+    <h1 [ngClass]="temp"> </h1>
+
+ if temp = "x"
+  
+  a css called x is applied to h1
+
+  inbuilt input directives : ngClass, ngStyle,style
+
+```
+
+#### Output Directive
+
+*Output directive is usally an event listener
+*it invokes the function which is specified as the value
+*it is enclosed with in  ()
+
+```
+  example:
+    
+    <button (click)="doThis()> Click this </button>
+
+    inbuilt output directives : click,change,mouseover,keyup,keydown
+
+```

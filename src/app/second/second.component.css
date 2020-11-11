@@ -10,6 +10,10 @@
   color: darkblue;
   border-radius: 100px;
   box-sizing: border-box;
-  box-shadow: 3px 3px 10px lightgreen;
+  box-shadow: 3px 3px 10px rgb(189, 238, 144);
+}
+
+.alter{
+  background-color: rgba(250, 61, 61, 0.781);
 }
 

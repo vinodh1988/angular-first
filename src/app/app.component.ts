@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   appname:string = "First Sample App";
+   appname = 'First Sample App' ;
+
+   handleClick(x): void{
+     alert(x);
+   }
 }
+
