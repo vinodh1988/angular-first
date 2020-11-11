@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MenuBlockComponent implements OnInit {
   @Input() title = 'dummy';
   @Input() items: string[] = [];
-  theme = 'menu-block';
+  @Input() theme = 'menu-block';
   constructor() { }
 
   ngOnInit(): void {

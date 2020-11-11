@@ -6,8 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent implements OnInit {
-theme = 'circle-container';
-
+@Input() theme = 'circle-container';
 @Input("title") menutitle = 'dummy';
   constructor() { }
 

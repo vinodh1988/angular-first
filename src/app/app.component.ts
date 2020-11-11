@@ -9,6 +9,10 @@ export class AppComponent  {
    appname = 'First Sample App' ;
    fonts = 'Consolas';
    circlemenus = ['Projects', 'Achievements', 'Products', 'KeyPeople'];
+
+   theme1 = 'menu-block';
+   theme2 = 'circle-container';
+
    menus = [
      {title: 'Social Media', values: ['Twitter', 'Instagram', 'Youtube', 'Facebook']},
      {title: 'Global Offices', values: ['Malaysia', 'Japan', 'Finland', 'South Africa']}
@@ -16,7 +20,9 @@ export class AppComponent  {
 
 
    handleClick(x): void{
-     alert(x);
+     this.theme1 = x === 1 ? 'menu-block' : 'menu-block alter';
+     this.theme2 = x === 1 ? 'circle-container' : 'circle-container alter';
+     console.log(this.theme1, this.theme2)
    }
 
 
