@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SecondComponent } from './second/second.component';
 // all your components need to be specified in declarations
 // all your pipes need to be specified in declarations
 // all your directives need to be specified in declerations
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,
