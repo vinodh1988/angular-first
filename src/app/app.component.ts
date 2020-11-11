@@ -8,6 +8,7 @@ import { Component, DoCheck } from '@angular/core';
 export class AppComponent  {
    appname = 'First Sample App' ;
    fonts = 'Consolas';
+   circlemenus = ['Projects', 'Achievements', 'Products', 'KeyPeople'];
 
 
    handleClick(x): void{
