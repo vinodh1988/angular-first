@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu-block',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-block.component.css']
 })
 export class MenuBlockComponent implements OnInit {
-  items: string[] = ['link 1', 'link 2', 'link 3', 'link 4', 'link 5'];
+  @Input() title = 'dummy';
+  @Input() items: string[] = [];
   theme = 'menu-block';
   constructor() { }
 

@@ -19,8 +19,11 @@
 </div>
 <hr>
 <div  class="menu-container" [style.fontFamily]="fonts">
-<app-menu-block></app-menu-block>
-<app-menu-block></app-menu-block>
+<app-menu-block *ngFor="let x  of menus"
+ [title]="x.title"
+ [items]="x.values"
+></app-menu-block>
+
 <div>
 
 

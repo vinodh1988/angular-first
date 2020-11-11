@@ -9,6 +9,10 @@ export class AppComponent  {
    appname = 'First Sample App' ;
    fonts = 'Consolas';
    circlemenus = ['Projects', 'Achievements', 'Products', 'KeyPeople'];
+   menus = [
+     {title: 'Social Media', values: ['Twitter', 'Instagram', 'Youtube', 'Facebook']},
+     {title: 'Global Offices', values: ['Malaysia', 'Japan', 'Finland', 'South Africa']}
+   ];
 
 
    handleClick(x): void{

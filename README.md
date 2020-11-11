@@ -118,3 +118,12 @@ Attribute directives are further catogorized into three kinds
    suppose if you type name it ll be stored to variable name
 
 ```
+
+## Parent Child Communication
+
+If parent is sending information to the child
+
+**Steps to follow**
+
+-In the child component, you need a variable to receive information
+-The variable has to qualified with a decorator in @Input
