@@ -105,3 +105,16 @@ Attribute directives are further catogorized into three kinds
     inbuilt output directives : click,change,mouseover,keyup,keydown
 
 ```
+
+#### Input output Directive
+* it behaves both as input directive and output directive
+* it is enclosed with [()]
+
+```
+
+  <input type="text" [(ngModel)]="name">
+
+   if name has a value it ll be printed in the text box
+   suppose if you type name it ll be stored to variable name
+
+```

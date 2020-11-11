@@ -1,16 +1,25 @@
 <h3>{{appname}}</h3>
 <hr>
    <b [style.color]="'lightgreen'" (click)="handleClick(1)">Theme1</b> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-   <b [style.color]="'tomato'" (click)="handleClick(2)">Theme2</b>
+   <b [style.color]="'tomato'" (click)="handleClick(2)">Theme2</b>  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+   <select [(ngModel)]="fonts">
+       <option>Times New Roman </option>
+       <option>Comic sans MS</option>
+       <option>Arial</option>
+       <option>Agency FB</option>
+       <option>Consolas</option>
+       <option>Courier</option>
+   </select>
+
 <hr>
-<div class="menu-container" >
+<div class="menu-container" [style.fontFamily]="fonts">
 <app-second></app-second>
 <app-second></app-second>
 <app-second></app-second>
 <app-second></app-second>
 </div>
 <hr>
-<div  class="menu-container">
+<div  class="menu-container" [style.fontFamily]="fonts">
 <app-menu-block></app-menu-block>
 <app-menu-block></app-menu-block>
 <div>
