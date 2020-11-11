@@ -31,3 +31,41 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng g c second
 
 will create component
+
+## Directives
+   
+Directives are custom attributes or custom elements created in angular framework
+
+Directives are catogorized into three types 
+    
+    * Component Directives
+    * Structural Directives
+    * Attribute Directives
+
+  
+### Component Directives
+ 
+    Every component itself is a directive
+
+### Structural Directives
+   
+    * Structural Directive generates template, hides template or unhide template
+    * Any Structural directive has to be prefixed with asterisk (*)
+
+    ```
+      inbuilt structural directives : ngFor, ngIf,ngSwitch
+
+      example
+      <div class="x" *ngIf="show"> content </div>
+
+      the above will be visible if and only if show is true
+    ```
+
+###  Attribute Directives
+
+   Attribute directives are further catogorized into three kinds
+
+      1. Input Directive
+      1. Output Directive
+      1. Input Output Directive
+    
