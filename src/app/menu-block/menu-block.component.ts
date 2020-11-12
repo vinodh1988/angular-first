@@ -9,6 +9,7 @@ export class MenuBlockComponent implements OnInit {
   @Input() title = 'dummy';
   @Input() items: string[] = [];
   @Input() theme = 'menu-block';
+  
   constructor() { }
 
   ngOnInit(): void {

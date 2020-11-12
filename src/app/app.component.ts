@@ -13,6 +13,8 @@ export class AppComponent  {
    theme1 = 'menu-block';
    theme2 = 'circle-container';
 
+   message = '';
+
    menus = [
      {title: 'Social Media', values: ['Twitter', 'Instagram', 'Youtube', 'Facebook']},
      {title: 'Global Offices', values: ['Malaysia', 'Japan', 'Finland', 'South Africa']}
@@ -26,6 +28,9 @@ export class AppComponent  {
    }
 
 
+   subscribed(data): void{
+     this.message = 'Last Clicked ' + data;
+   }
 
 }
 

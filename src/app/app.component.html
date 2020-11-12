@@ -10,12 +10,16 @@
        <option>Consolas</option>
        <option>Courier</option>
    </select>
+   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+   {{message}}
 
 <hr>
 <div class="menu-container" [style.fontFamily]="fonts">
 
-<app-second *ngFor="let x of circlemenus" [title]="x" [theme]="theme2"></app-second>
-
+<app-second *ngFor="let x of circlemenus"
+[title]="x"
+[theme]="theme2"
+(send) = "subscribed($event)"></app-second>
 </div>
 <hr>
 <div  class="menu-container" [style.fontFamily]="fonts">

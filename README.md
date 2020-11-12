@@ -121,9 +121,22 @@ Attribute directives are further catogorized into three kinds
 
 ## Parent Child Communication
 
-If parent is sending information to the child
+If parent is sending information to the child [Input]
 
 **Steps to follow**
 
--In the child component, you need a variable to receive information
--The variable has to qualified with a decorator in @Input
+- In the child component, you need a variable to receive information
+- The variable has to qualified with a decorator in @Input
+
+If child is passing some information to parent (output) 
+
+- output is always an eventemitter
+
+**Steps to follow**
+
+- In the child component, you need a variable which is of type EventEmitter
+- That variable has to be decorated with @Output
+- EventEmitter is available in angular
+- EventEmitter sends data to the subscribers
+- We code in a such a way that whenever an event occurs using event emitter we emit the data
+- We make the parent component subscribe to it

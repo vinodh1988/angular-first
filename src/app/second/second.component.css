@@ -11,6 +11,11 @@
   border-radius: 100px;
   box-sizing: border-box;
   box-shadow: 3px 3px 10px rgb(189, 238, 144);
+  cursor: pointer;
+}
+
+.circle-container:hover{
+  transform: scale(1.1)
 }
 
 .alter{
